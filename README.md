@@ -1,1 +1,1 @@
-# Business Analytic vs Data Analytics with CI/CD,Agile,Scrum using Copilot:
+# Business Analytic and Data Analytics by CI/CD,Agile,Scrum with Copilot:
