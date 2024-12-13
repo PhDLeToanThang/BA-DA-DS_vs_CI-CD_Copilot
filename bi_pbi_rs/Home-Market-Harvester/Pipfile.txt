@@ -1,0 +1,30 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+fake-useragent = "*"
+requests = "*"
+beautifulsoup4 = "*"
+pandas = "*"
+selenium = "*"
+webdriver-manager = "*"
+enlighten = "*"
+scipy = "*"
+seaborn = "*"
+matplotlib = "*"
+geopy = "*"
+haversine = "*"
+streamlit = "*"
+numpy = "*"
+plotly = "*"
+scikit-learn = "*"
+statsmodels = "*"
+psutil = "*"
+
+[dev-packages]
+pylint = "*"
+
+[requires]
+python_version = "3.11"
