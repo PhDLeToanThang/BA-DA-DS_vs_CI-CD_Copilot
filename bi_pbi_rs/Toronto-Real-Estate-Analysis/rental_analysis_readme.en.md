@@ -16,7 +16,7 @@ This dashboard's goal is to provide charts, maps, and interactive visualizations
 
 ## Rental Analysis
 
-The code for the rental analysis is contained in [rental_analysis.ipynb](/rental_analysis.ipynb).
+The code for the rental analysis is contained in [rental_analysis.ipynb](https://github.com/PhDLeToanThang/BA-DA-DS_vs_CI-CD_Copilot/blob/main/bi_pbi_rs/Toronto-Real-Estate-Analysis/rental_analysis.ipynb).
 
 ### Dwelling Types Per Year
 This section calculates the number of dwelling types per year and visualizes the results as a bar chart using the Pandas plot function.
@@ -82,7 +82,7 @@ See below a sunburst chart to conduct a cost analysis of the most expensive neig
 
 ## Dashboard
 
-The [dashboard.ipynb](/dashboard.ipynb) notebook contains the dashboard code. 
+The [dashboard.ipynb](https://github.com/PhDLeToanThang/BA-DA-DS_vs_CI-CD_Copilot/blob/main/bi_pbi_rs/Toronto-Real-Estate-Analysis/dashboard.ipynb) notebook contains the dashboard code. 
 
 See the dashboard below:
 
