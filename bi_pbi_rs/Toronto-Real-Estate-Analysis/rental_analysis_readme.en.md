@@ -1,5 +1,5 @@
 # Toronto Rental Analysis
-![](/Images/toronto.jpg)
+![](https://github.com/PhDLeToanThang/BA-DA-DS_vs_CI-CD_Copilot/blob/main/bi_pbi_rs/Toronto-Real-Estate-Analysis/Images/toronto.jpg)
 
 ## Table of Contents
 - [Overview](#overview)
@@ -21,16 +21,16 @@ The code for the rental analysis is contained in [rental_analysis.ipynb](/rental
 ### Dwelling Types Per Year
 This section calculates the number of dwelling types per year and visualizes the results as a bar chart using the Pandas plot function.
 
-![](/Images/dwelling_types01.png)
-![](/Images/dwelling_types02.png)
-![](/Images/dwelling_types03.png)
-![](/Images/dwelling_types04.png)
+![](https://github.com/PhDLeToanThang/BA-DA-DS_vs_CI-CD_Copilot/blob/main/bi_pbi_rs/Toronto-Real-Estate-Analysis/Images/dwelling_types01.png)
+![](https://github.com/PhDLeToanThang/BA-DA-DS_vs_CI-CD_Copilot/blob/main/bi_pbi_rs/Toronto-Real-Estate-Analysis/Images/dwelling_types02.png)
+![](https://github.com/PhDLeToanThang/BA-DA-DS_vs_CI-CD_Copilot/blob/main/bi_pbi_rs/Toronto-Real-Estate-Analysis/Images/dwelling_types03.png)
+![](https://github.com/PhDLeToanThang/BA-DA-DS_vs_CI-CD_Copilot/blob/main/bi_pbi_rs/Toronto-Real-Estate-Analysis/Images/dwelling_types04.png)
 
 ### Average Monthly Shelter Costs in Toronto Per Year
 
 This section visualizes the average monthly shelter costs per year to better understand the rental income trends over time. See below the average (mean) shelter cost for owned and rented dwellings per year:
 
-![](/Images/shelter_costs.png)
+![](https://github.com/PhDLeToanThang/BA-DA-DS_vs_CI-CD_Copilot/blob/main/bi_pbi_rs/Toronto-Real-Estate-Analysis/Images/shelter_costs.png)
 
 ### Average House Value per Year
 
@@ -38,13 +38,13 @@ This section determines the average house value per year. An investor may want t
 
 See below the average house value in Toronto per year:
 
-![](/Images/house_value.png)
+![](https://github.com/PhDLeToanThang/BA-DA-DS_vs_CI-CD_Copilot/blob/main/bi_pbi_rs/Toronto-Real-Estate-Analysis/Images/house_value.png)
 
 ### Average House Value by Neighbourhood
 
 This section compares the house value by neighbourhood. By using `hvplot`, the graph includes an interactive dropdown selector for the neighbourhood. See in the image below:
 
-![](/Images/value_by_neighbourhood.png)
+![](https://github.com/PhDLeToanThang/BA-DA-DS_vs_CI-CD_Copilot/blob/main/bi_pbi_rs/Toronto-Real-Estate-Analysis/Images/value_by_neighbourhood.png)
 
 ### Number of Dwelling Types per Year
 
@@ -52,7 +52,7 @@ This section visualizes the number of dwelling types per year in each neighbourh
 
 By using `hvplot`, the graph includes an interactive visualization of the average number of dwelling types per year with a dropdown selector for the neighbourhood. See in the image below
 
-![](/Images/dt_per_year.png)
+![](https://github.com/PhDLeToanThang/BA-DA-DS_vs_CI-CD_Copilot/blob/main/bi_pbi_rs/Toronto-Real-Estate-Analysis/Images/dt_per_year.png)
 
 ### Top 10 Most Expensive Neighbourhoods
 
@@ -60,7 +60,7 @@ In order to ascertain which neighbourhoods are the most expensive, I calculated 
 
 The results are plotted as a bar chart:
 
-![](/Images/10_most_expensive.png)
+![](https://github.com/PhDLeToanThang/BA-DA-DS_vs_CI-CD_Copilot/blob/main/bi_pbi_rs/Toronto-Real-Estate-Analysis/Images/10_most_expensive.png)
 
 ### Neighbourhood Map
 
@@ -68,17 +68,17 @@ In this final section I read in neighbourhood location data and built an interac
 
 See the visualisation below:
 
-![](/Images/map.png)
+![](https://github.com/PhDLeToanThang/BA-DA-DS_vs_CI-CD_Copilot/blob/main/bi_pbi_rs/Toronto-Real-Estate-Analysis/Images/map.png)
 
 ### Cost Analysis
 
 See below a bar chart row facet created to plot the average house values for all Toronto neighbourhoods per year:
 
-![](/Images/value_neighbourhood.png)
+![](https://github.com/PhDLeToanThang/BA-DA-DS_vs_CI-CD_Copilot/blob/main/bi_pbi_rs/Toronto-Real-Estate-Analysis/Images/value_neighbourhood.png)
 
 See below a sunburst chart to conduct a cost analysis of the most expensive neighbourhoods in Toronto per year:
 
-![](/Images/sunburst.png)
+![](https://github.com/PhDLeToanThang/BA-DA-DS_vs_CI-CD_Copilot/blob/main/bi_pbi_rs/Toronto-Real-Estate-Analysis/Images/sunburst.png)
 
 ## Dashboard
 
@@ -86,7 +86,7 @@ The [dashboard.ipynb](/dashboard.ipynb) notebook contains the dashboard code.
 
 See the dashboard below:
 
-![](/Images/dashboard.png)
+![](https://github.com/PhDLeToanThang/BA-DA-DS_vs_CI-CD_Copilot/blob/main/bi_pbi_rs/Toronto-Real-Estate-Analysis/Images/dashboard.png)
 
 ## Environment
 
@@ -214,7 +214,7 @@ Follow the next steps to install PyViz and all its dependencies in your Python v
 
 ## How to Run the Dashboard
 
-![](/Images/dashboard.png)
+![](https://github.com/PhDLeToanThang/BA-DA-DS_vs_CI-CD_Copilot/blob/main/bi_pbi_rs/Toronto-Real-Estate-Analysis/Images/dashboard.png)
 
 ### Running the Dashboard
 In order to run the Dashboard, run the code in **dashboard.ipynb** file.
