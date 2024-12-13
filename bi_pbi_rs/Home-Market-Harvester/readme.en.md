@@ -1,6 +1,6 @@
-# ???? Home Market Harvester Project
+# 🔍🏠 Home Market Harvester Project
 
-## ?? Overview
+## 📋 Overview
 
 The Home Market Harvester is a complete data system designed to `gather` -> `purify` -> `analyze` -> `train model` -> `display information` about the real estate market. It focuses on specific areas, comparing selected properties with the general market.
 
@@ -10,15 +10,15 @@ It gathers data from [`olx.pl`](https://www.olx.pl/) and [`otodom.pl`](https://w
 
 The program runs on a personal computer and uses free, open-source tools along with two additional services for improving the data. These services provide location details through [`Nominatim`](https://nominatim.org/release-docs/latest/library/Getting-Started/) and calculate travel times via [`openrouteservice`](https://openrouteservice.org/). The dashboard is built with the [`streamlit`](https://docs.streamlit.io/) framework, allowing it to be accessed via a local web address and shared with others.
 
-## ?? Data Visualization
+## 📊 Data Visualization
 
 ![dashboard](doc/images/dashboard_preview.png)
 
-## ??? Project Structure
+## 🗂️ Project Structure
 
 ![data_pipeline](doc/images/data_pipeline.png)
 
-### ?? Most important libraries
+### 📚 Most important libraries
 
 **scraping:**
 
@@ -57,7 +57,7 @@ The program runs on a personal computer and uses free, open-source tools along w
 - [**`seaborn:`**](https://seaborn.pydata.org/)
   _Visualization library based on matplotlib that provides a high-level interface for drawing attractive and informative statistical graphics, making data visualization both easier and more aesthetically pleasing._
 
-### ??? Pipeline Elements Breakdown
+### 🗜️ Pipeline Elements Breakdown
 
 - **`data`**: Houses both raw and processed datasets.
 - **`logs`**: Archives logs from the pipeline operations, such as scraping and system activity.
@@ -75,11 +75,11 @@ Each stage of the **`pipeline`** (**`a_scraping`**, **`b_cleaning`**, **`c_model
 
 Subdirectories such as **`orchestration`** and **`config`** help these processes by offering tools, helper functions, and configuration management for smooth pipeline operation.
 
-## ?? Requirements
+## 📦 Requirements
 
 Look at [`Pipfile`](Pipfile)
 
-## ?? Installation
+## ⚙️ Installation
 
 To set up the project environment:
 
@@ -89,21 +89,21 @@ pipenv install
 pipenv shell
 ```
 
-**?? Note**:
+**🚨 Note**:
 It's important to remember that the pipeline relies on external data sources, which may be subject to A/B tests, frontend changes, anti-bot activity, and server failures.
 
-## ?? Configuration
+## 🔧 Configuration
 
 Found in the [`pipeline/config`](pipeline/config) directory, this setup makes it easier to manage API keys, file paths, and server settings:
 
 
-- Dynamic Naming with [`run_pipeline.conf`](pipeline/config/run_pipeline.conf): The `MARKET_OFFERS_TIMEPLACE` variable automatically names data storage directories using timestamps and locations, such as `2024_02_20_16_37_54_Mierzecice__Bedzinski__Slaskie`. This helps keep data organized and easy to find.
+- Dynamic Naming with [`run_pipeline.conf`](pipeline/config/run_pipeline.conf): The `MARKET_OFFERS_TIMEPLACE` variable automatically names data storage directories using timestamps and locations, such as `2024_02_20_16_37_54_Mierzęcice__Będziński__Śląskie`. This helps keep data organized and easy to find.
 
 - Security with `.env` File: Important details like `API` keys, `USER_OFFERS_PATH`, `CHROME_DRIVER_PATH`, and `CHROME_BROWSER_PATH` are stored here for better security.
 
 - It's essential to get and set up the required API key for [`openrouteservice`](https://openrouteservice.org/) and include paths like [`CHROME_DRIVER_PATH`, `CHROME_BROWSER_PATH`](https://stackoverflow.com/a/77614979/12490791), and `USER_OFFERS_PATH` in the .`env` file.
 
-## ?? Usage
+## 🔨 Usage
 
 The app can be executed by running the `run_pipeline.py` script found within the `pipeline` directory.
 
@@ -117,7 +117,7 @@ For example, to collect up to `100` housing offers within `25` km of `Warsaw` at
 python pipeline/run_pipeline.py --location_query "Warszawa" --area_radius 25 --scraped_offers_cap 100 --destination_coords "52.203531, 21.047047" --user_data_path "D:\path\user_data.csv"
 ```
 
-## ?? Development
+## 💻 Development
 
 The `notebooks` directory includes Jupyter Notebooks that provide an interactive environment for developing and handling data. These notebooks are meant for development only, not for production.
 
@@ -125,7 +125,7 @@ The `notebooks` directory includes Jupyter Notebooks that provide an interactive
 
 The pipeline supports running each stage independently as a Python script, except for the `d_data_visualizing` stage. This stage uses the [`streamlit`](https://docs.streamlit.io/) framework to produce interactive visualizations. For more details on this component, see the [streamlit_README](pipeline/stages/d_data_visualizing/README.MD).
 
-## ? Testing
+## ✅ Testing
 
 The `tests` directory contains scripts that check the functionality and reliability of different parts of the pipeline. Right now, only the scraping phase has automated tests.
 
@@ -138,12 +138,12 @@ python -m unittest discover -s tests -p 'test_*.py'
 
 ---
 
-## ?? Lessons Learned
+## 💡 Lessons Learned
 
 During the development, three significant insights were gained:
 
 1. **Preserving HTML Source Code for Data Integrity**
-Due to the instability of `web scraping` sources, we save the `HTML` source code of each listing. This practice prevents data loss during processing and makes it easier to extract data if listings change. The small size of HTML files means they don�t take up much disk space or affect performance, making this method efficient and practical.
+Due to the instability of `web scraping` sources, we save the `HTML` source code of each listing. This practice prevents data loss during processing and makes it easier to extract data if listings change. The small size of HTML files means they don’t take up much disk space or affect performance, making this method efficient and practical.
 
 2. **Executing Python Scripts**
 Running `Python` scripts directly from `.py` files is more effective than converting `Jupyter Notebooks` to `.py` files and then running them. The latter often causes issues with library compatibility. Direct execution avoids these problems and ensures smoother development.
@@ -154,7 +154,7 @@ Running `Python` scripts directly from `.py` files is more effective than conver
 4. **Updating Environment Variables During Runtime**<br>
    To prevent issues with `environment variables` not updating correctly, it is better to directly modify `system files` within the project.
 
-## ?? License
+## 📜 License
 
 This project is licensed under the terms of the [LICENSE](LICENSE) file located in the project root.
 
