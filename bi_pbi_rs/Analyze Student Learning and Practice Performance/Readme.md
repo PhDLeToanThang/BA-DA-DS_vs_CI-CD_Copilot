@@ -1,53 +1,52 @@
-# Student Performance Analysis with Power BI
+# Phân tích hiệu suất học tập và thực hành của học viên bằng Power BI
 
-## Overview
+## Tổng quan
 
-This Power BI project aims to analyze student performance data and derive insights to improve educational outcomes. The dataset includes information such as gender, race/ethnicity, parental level of education, lunch type, test preparation course completion, and scores in math, reading, and writing. This README provides an overview of key insights, DAX measures, and visualization suggestions derived from the analysis.
+Dự án Power BI này nhằm mục đích phân tích dữ liệu hiệu suất của học viên và đưa ra thông tin chi tiết để cải thiện kết quả giáo dục. Bộ dữ liệu bao gồm thông tin như giới tính, chủng tộc/dân tộc, trình độ học vấn của cha mẹ, loại bữa trưa, hoàn thành khóa học chuẩn bị kiểm tra và điểm số môn toán, đọc và viết. README này cung cấp tổng quan về các thông tin chi tiết chính, các biện pháp DAX và các đề xuất trực quan hóa có được từ phân tích.
 
-## Key Insights and DAX Measures
+## Thông tin chi tiết chính và các biện pháp DAX
 
-1. **Overall Performance:**
-   - DAX Measure: `Overall Performance = AVERAGE('Case Study Table'[math_score] + 'Case Study Table'[reading_score] + 'Case Study Table'[writing_score])`
-   - Description: Assess the overall academic performance of students across all subjects.
+1. **Hiệu suất chung:**
+- Biện pháp DAX: `Hiệu suất chung = AVERAGE('Bảng thống kê'[math_score] + 'Bảng thống kê'[reading_score] + 'Bảng thống kê'[writing_score])`
+- Mô tả: Đánh giá hiệu suất học tập chung của học viên trên tất cả các môn học.
 
-2. **Performance Gap:**
-   - DAX Measure: `Performance Gap = ABS(AVERAGE('Case Study Table'[math_score]) - AVERAGE('Case Study Table'[reading_score]))`
-   - Description: Identify the performance gap between different subjects.
+2. **Khoảng cách hiệu suất:**
+- Đo lường DAX: `Khoảng cách hiệu suất = ABS(AVERAGE('Bảng thống kê'[math_score]) - AVERAGE('Bảng thống kê'[reading_score]))`
+- Mô tả: Xác định khoảng cách hiệu suất giữa các môn học khác nhau.
 
-3. **Test Preparation Impact:**
-   - DAX Measure: `Test Preparation Impact = IF(ISBLANK(AVERAGE('Case Study Table'[test_preparation_course])), "No Course", "Course Completed")`
-   - Description: Measure the impact of completing a test preparation course on overall performance.
+3. **Tác động của việc chuẩn bị kiểm tra:**
+- Đo lường DAX: `Tác động của việc chuẩn bị kiểm tra = IF(ISBLANK(AVERAGE('Bảng nghiên cứu tình huống'[test_preparation_course])), "Không có khóa học", "Khóa học đã hoàn thành")`
+- Mô tả: Đo lường tác động của việc hoàn thành khóa học chuẩn bị kiểm tra đối với hiệu suất chung.
 
-4. **Gender Performance Disparity:**
-   - DAX Measure: `Gender Performance Disparity = ABS(AVERAGE('Case Study Table'[math_score]) - AVERAGE('Case Study Table'[reading_score]))`
-   - Description: Evaluate if there's a significant difference in performance between genders.
+4. **Chênh lệch hiệu suất theo giới tính:**
+- Đo lường DAX: `Chênh lệch hiệu suất theo giới tính = ABS(AVERAGE('Bảng thống kê'[math_score]) - AVERAGE('Bảng thống kê'[reading_score]))`
+- Mô tả: Đánh giá xem có sự khác biệt đáng kể nào về hiệu suất giữa các giới tính hay không?
 
-5. **Parental Education Influence:**
-   - DAX Measure: `Parental Education Influence = IF(AVERAGE('Case Study Table'[parental_level_of_education]) = "Bachelor's Degree", "Bachelor's Degree", IF(AVERAGE('Case Study Table'[parental_level_of_education]) = "Master's Degree", "Master's Degree", "Other"))`
-   - Description: Determine if parental level of education correlates with student performance.
+5. **Ảnh hưởng của trình độ học vấn của cha mẹ:**
+- Đo lường DAX: `Ảnh hưởng từ trình độ học vấn của cha mẹ = IF(AVERAGE('Bảng nghiên thống kê'[parental_level_of_education]) = "Bằng cử nhân", "Bằng cử nhân", IF(AVERAGE('Bảng thống kê'[parental_level_of_education]) = "Bằng thạc sĩ", "Bằng thạc sĩ", "Khác"))`
+- Mô tả: Xác định xem trình độ học vấn của cha mẹ có tương quan với thành tích của học viên hay không?
 
-## Visualization Suggestions
+## Gợi ý trực quan hóa
 
-1. **Overall Performance:**
-   - Visualization: Horizontal bar chart or bullet chart.
+1. **Hiệu suất chung:**
+- Trực quan hóa: Biểu đồ thanh ngang hoặc biểu đồ dấu đầu dòng.
 
-2. **Performance Gap:**
-   - Visualization: Stacked bar chart or waterfall chart.
+2. **Khoảng cách hiệu suất:**
+- Trực quan hóa: Biểu đồ thanh xếp chồng hoặc biểu đồ thác nước.
 
-3. **Test Preparation Impact:**
-   - Visualization: Pie chart or stacked column chart.
+3. **Tác động đến việc chuẩn bị kiểm tra:**
+- Trực quan hóa: Biểu đồ hình tròn hoặc biểu đồ cột xếp chồng.
 
-4. **Gender Performance Disparity:**
-   - Visualization: Grouped bar chart or box plot.
+4. **Chênh lệch hiệu suất theo giới tính:**
+- Trực quan hóa: Biểu đồ thanh nhóm hoặc biểu đồ hộp.
 
-5. **Parental Education Influence:**
-   - Visualization: Clustered column chart or stacked bar chart.
+5. **Ảnh hưởng của giáo dục phụ huynh:**
+- Hình ảnh hóa: Biểu đồ cột nhóm hoặc biểu đồ thanh xếp chồng.
 
-These visualization suggestions aim to effectively communicate the insights derived from the DAX measures and facilitate data-driven decision-making in the educational context.
+Những gợi ý hình ảnh hóa này nhằm mục đích truyền đạt hiệu quả những hiểu biết có được từ các biện pháp DAX và tạo điều kiện cho việc ra quyết định dựa trên dữ liệu trong bối cảnh giáo dục.
 
-## Usage
+## Sử dụng
 
-1. Import the student performance dataset into Power BI.
-2. Create DAX measures for each key insight using the provided expressions.
-3. Utilize the DAX measures and visualization suggestions to analyze and visualize student performance data effectively.
-
+1. Nhập tập dữ liệu hiệu suất của học viên vào Power BI.
+2. Tạo các biện pháp DAX cho từng hiểu biết chính bằng cách sử dụng các biểu thức được cung cấp.
+3. Sử dụng các biện pháp DAX và gợi ý hình ảnh hóa để phân tích và hình ảnh hóa dữ liệu hiệu suất của học viên một cách hiệu quả.
